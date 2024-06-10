@@ -1,0 +1,102 @@
+:root{
+    --first-color:#e7eaf6;;
+    --second-color:#a2a8d3;;
+    --third-color:#38598b;
+    --fourth-color:#113f67;
+
+}
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    font-family: sans-serif;
+}
+/* Board Morpion */
+.cell-morpion {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 80px;
+    cursor: pointer;
+
+}
+
+#board-morpion{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 42%;
+    
+}
+#status-message,#restart-button-morpion{
+    display: flex;
+    justify-content: center;
+}
+
+/* header */
+.top-nav{
+    background-color:var(--first-color);
+    overflow: hidden;
+    height: 3rem;
+    padding-left: 5%;
+}
+.top-nav a{
+    text-decoration: none;
+    font-size: 2rem;
+    color:var(--third-color);
+    margin-left: 2rem;
+    
+}
+.top-nav a:hover{
+    color: var(--fourth-color);
+    text-decoration: underline;
+}
+/* container */
+.main-morpion{
+    background-color: white;  
+}
+h1,h2{
+    display: flex;
+    justify-content: center;
+}
+.regles{
+    display: flex;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 1.2rem;
+}
+.main-home p,li{
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding-left: 4%;
+    background-color: var(--fourth-color);
+}
+footer li{
+    margin-bottom: 0.1rem;
+    list-style-type: none;
+    
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    color: var(--third-color);
+}
+footer img{
+    max-width: 1%;
+}

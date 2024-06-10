@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game With Eliott</title>
+    <link rel="stylesheet" href="../Core/Styles/game.css" />
+    
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="top-nav">
+            <a href="../index.html">Home</a>
+            <a href="morpion.html">Morpion</a>
+            <a href="puissance4.html">Puissance 4</a>
+            <a href="dames.html">Dames</a>
+            <a href="plus.html">Plus</a>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main class="main-morpion">
+        <div class="main text">
+        <h1>Jouez au Morpion</h1>
+        <h2>Règles du jeu</h2>
+        <p class="regles">
+            Pour démarer une partie il suffit de cliquer sur une case ce qui place un symbole, chaque joueur possede un symbole différent et jouent l'un après l'autre.
+            Chaque joueur a donc son propre symbole, une croix pour l’un et un rond pour l’autre.
+            Le but du jeu est d’aligner avant son adversaire 3 symboles identiques horizontalement, verticalement ou en diagonale.
+            
+        </p>
+        </div>
+        <div class="main-game">
+            <div id="board-morpion">
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+                <div class="cell-morpion" data-cell></div>
+              </div>
+              <div id="status-message"><p>Au tour de X</p></div>
+              <div id="restart-button-morpion"><button id="restart-button" onclick="rejouer()">Rejouer</button></div>
+          
+              
+              <script src="../Core/Logic/morpion.js"></script>
+
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/eliott-maille/">Mon Linkedin</a><img src="../Assets/linkedin_logo_icon_181286.png"></li>
+            <li><a href="https://github.com/Mistoruu">Mon Github</a><img src="../Assets/25231.png"></li>
+            <li><a href="mailto:maille.eliott@gmail.com">Contactez Moi !</a><img src="../Assets/MailFavicon.png"></li>
+        </ul>
+    </footer>
+</body>
+</html>
